@@ -1,8 +1,8 @@
-<%= form_with(model: order, local: true) do |form| %>
+<%= form_for([@listing, @order]) do |form| %>
   <% if order.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
-
+    <div id="error_explanation" class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h4><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h4>
       <ul>
       <% order.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :address %>
-    <%= form.text_field :address, id: :order_address %>
+    <%= form.text_field :address, id: :order_address, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :city %>
-    <%= form.text_field :city, id: :order_city %>
+    <%= form.text_field :city, id: :order_city, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :state %>
-    <%= form.text_field :state, id: :order_state %>
+    <%= form.text_field :state, id: :order_state, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Complete Order", class: "btn btn-success" %>
   </div>
 <% end %>
