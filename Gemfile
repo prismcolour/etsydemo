@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rubygems.org'
 ruby "2.4.0"
 
 git_source(:github) do |repo_name|
@@ -20,6 +21,7 @@ gem "paperclip-dropbox", ">=1.1.7"
 gem "figaro"
 gem 'devise'
 gem 'jquery-rails'
+gem 'stripe'
 
 group :production do
   gem 'pg'
