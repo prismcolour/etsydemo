@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   
 	root 'listings#index'
 	
-  devise_for :users
+  # Correct way to route to the 
+  devise_for :users do
+    get 'omniauth_callbacks'
+  end
+
   resources :listings do
   	resources :orders, only: [:new, :create]
   end

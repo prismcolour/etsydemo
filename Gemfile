@@ -22,7 +22,10 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'stripe_event'
+gem 'oauth2'
 gem 'omniauth-stripe-connect'
+
 
 
 group :production do

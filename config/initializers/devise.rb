@@ -277,7 +277,7 @@ Devise.setup do |config|
 
   config.omniauth :stripe_connect,
       ENV['STRIPE_CONNECT_CLIENT_ID'],
-      ENV['STRIPE_SECRET_KEY'],
+      ENV['STRIPE_API_KEY'],
       :scope => 'read_write',
       :stripe_landing => 'register'
 end
