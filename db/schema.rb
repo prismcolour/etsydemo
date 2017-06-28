@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170627172150) do
+ActiveRecord::Schema.define(version: 20170627232407) do
 
   create_table "listings", force: :cascade do |t|
     t.string "name"
@@ -50,10 +50,7 @@ ActiveRecord::Schema.define(version: 20170627172150) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
-    t.string "publishable_key"
-    t.string "provider"
-    t.string "uid"
-    t.string "access_code"
+    t.string "recipient"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
