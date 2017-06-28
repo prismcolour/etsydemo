@@ -1,0 +1,999 @@
+
+
+Progress: |
+config.ru:3:18: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require_relative 'config/environment'
+                 ^^^^^^^^^^^^^^^^^^^^
+Progress: |=
+Gemfile:1:8: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+source 'https://rubygems.org'
+       ^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:9:1: C: Extra blank line detected.
+Gemfile:10:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'rails', '~> 5.1.1'
+    ^^^^^^^
+Gemfile:10:14: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'rails', '~> 5.1.1'
+             ^^^^^^^^^^
+Gemfile:11:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem puma should appear before rails.
+gem 'puma', '~> 3.7'
+^^^^^^^^^^^^^^^^^^^^
+Gemfile:11:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'puma', '~> 3.7'
+    ^^^^^^
+Gemfile:11:13: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'puma', '~> 3.7'
+            ^^^^^^^^
+Gemfile:12:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'sass-rails', '~> 5.0'
+    ^^^^^^^^^^^^
+Gemfile:12:19: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'sass-rails', '~> 5.0'
+                  ^^^^^^^^
+Gemfile:13:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'uglifier', '>= 1.3.0'
+    ^^^^^^^^^^
+Gemfile:13:17: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'uglifier', '>= 1.3.0'
+                ^^^^^^^^^^
+Gemfile:14:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem coffee-rails should appear before uglifier.
+gem 'coffee-rails'
+^^^^^^^^^^^^^^^^^^
+Gemfile:14:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'coffee-rails'
+    ^^^^^^^^^^^^^^
+Gemfile:15:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'turbolinks', '~> 5'
+    ^^^^^^^^^^^^
+Gemfile:15:19: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'turbolinks', '~> 5'
+                  ^^^^^^
+Gemfile:16:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem jbuilder should appear before turbolinks.
+gem 'jbuilder', '~> 2.5'
+^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:16:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'jbuilder', '~> 2.5'
+    ^^^^^^^^^^
+Gemfile:16:17: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'jbuilder', '~> 2.5'
+                ^^^^^^^^
+Gemfile:17:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem bootstrap-sass should appear before jbuilder.
+gem 'bootstrap-sass', '~> 3.3.6'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:17:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'bootstrap-sass', '~> 3.3.6'
+    ^^^^^^^^^^^^^^^^
+Gemfile:17:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'bootstrap-sass', '~> 3.3.6'
+                      ^^^^^^^^^^
+Gemfile:20:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem figaro should appear before paperclip-dropbox.
+gem "figaro"
+^^^^^^^^^^^^
+Gemfile:21:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem devise should appear before figaro.
+gem 'devise'
+^^^^^^^^^^^^
+Gemfile:21:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'devise'
+    ^^^^^^^^
+Gemfile:22:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'jquery-rails'
+    ^^^^^^^^^^^^^^
+Gemfile:23:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'jquery-turbolinks'
+    ^^^^^^^^^^^^^^^^^^^
+Gemfile:24:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+    ^^^^^^^^
+Gemfile:24:15: C: Use the new Ruby 1.9 hash syntax.
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+              ^^^^^^^
+Gemfile:24:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:25:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'stripe_event'
+    ^^^^^^^^^^^^^^
+Gemfile:26:1: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem oauth2 should appear before stripe_event.
+gem 'oauth2'
+^^^^^^^^^^^^
+Gemfile:26:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'oauth2'
+    ^^^^^^^^
+Gemfile:27:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+gem 'omniauth-stripe-connect'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:29:1: C: Extra blank line detected.
+Gemfile:30:1: C: Extra blank line detected.
+Gemfile:32:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'pg'
+      ^^^^
+Gemfile:36:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'sqlite3'
+      ^^^^^^^^^
+Gemfile:37:3: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem byebug should appear before sqlite3.
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:37:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+      ^^^^^^^^
+Gemfile:37:28: C: Use %i or %I for an array of symbols.
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:38:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'capybara', '~> 2.13'
+      ^^^^^^^^^^
+Gemfile:38:19: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'capybara', '~> 2.13'
+                  ^^^^^^^^^
+Gemfile:39:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'selenium-webdriver'
+      ^^^^^^^^^^^^^^^^^^^^
+Gemfile:43:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'web-console', '>= 3.3.0'
+      ^^^^^^^^^^^^^
+Gemfile:43:22: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'web-console', '>= 3.3.0'
+                     ^^^^^^^^^^
+Gemfile:44:3: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem listen should appear before web-console.
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:44:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'listen', '>= 3.0.5', '< 3.2'
+      ^^^^^^^^
+Gemfile:44:17: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'listen', '>= 3.0.5', '< 3.2'
+                ^^^^^^^^^^
+Gemfile:44:29: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'listen', '>= 3.0.5', '< 3.2'
+                            ^^^^^^^
+Gemfile:45:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'spring'
+      ^^^^^^^^
+Gemfile:46:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'spring-watcher-listen', '~> 2.0.0'
+      ^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:46:32: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'spring-watcher-listen', '~> 2.0.0'
+                               ^^^^^^^^^^
+Gemfile:47:3: C: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem rubocop should appear before spring-watcher-listen.
+  gem 'rubocop', require: false
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:47:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  gem 'rubocop', require: false
+      ^^^^^^^^^
+Gemfile:49:1: C: 1 trailing blank lines detected.
+
+Rakefile:4:18: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require_relative 'config/application'
+                 ^^^^^^^^^^^^^^^^^^^^
+
+app/controllers/listings_controller.rb:2:37: C: Use %i or %I for an array of symbols.
+  before_action :set_listing, only: [:show, :edit, :update, :destroy]
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:3:44: C: Use %i or %I for an array of symbols.
+  before_action :authenticate_user!, only: [:seller,  :new, :create, :edit, :update, :destroy]
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:3:53: C: Unnecessary spacing detected.
+  before_action :authenticate_user!, only: [:seller,  :new, :create, :edit, :update, :destroy]
+                                                    ^
+app/controllers/listings_controller.rb:4:36: C: Use %i or %I for an array of symbols.
+  before_action :check_user, only: [:edit, :update, :destroy]
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:18:3: C: Put empty method definitions on a single line.
+  def show ...
+  ^^^^^^^^
+app/controllers/listings_controller.rb:27:3: C: Put empty method definitions on a single line.
+  def edit ...
+  ^^^^^^^^
+app/controllers/listings_controller.rb:32:3: C: Assignment Branch Condition size for create is too high. [28.71/15]
+  def create
+  ^^^
+app/controllers/listings_controller.rb:32:3: C: Method has too many lines. [22/20]
+  def create ...
+  ^^^^^^^^^^
+app/controllers/listings_controller.rb:38:7: W: Useless assignment to variable - token.
+      token = params[:stripeToken]
+      ^^^^^
+app/controllers/listings_controller.rb:40:42: C: Trailing whitespace detected.
+      recipient = Stripe::Account.create( 
+                                         ^
+app/controllers/listings_controller.rb:41:7: C: Align the elements of a hash literal if they span more than one line.
+      :type => 'custom', 
+      ^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:41:7: C: Indent the first parameter one step more than the start of the previous line.
+      :type => 'custom',  ...
+      ^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:41:7: C: Use the new Ruby 1.9 hash syntax.
+      :type => 'custom', 
+      ^^^^^^^^
+app/controllers/listings_controller.rb:41:16: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      :type => 'custom', 
+               ^^^^^^^^
+app/controllers/listings_controller.rb:41:25: C: Trailing whitespace detected.
+      :type => 'custom', 
+                        ^
+app/controllers/listings_controller.rb:42:7: C: Use the new Ruby 1.9 hash syntax.
+      :country => 'US', 
+      ^^^^^^^^^^^
+app/controllers/listings_controller.rb:42:19: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      :country => 'US', 
+                  ^^^^
+app/controllers/listings_controller.rb:42:24: C: Trailing whitespace detected.
+      :country => 'US', 
+                       ^
+app/controllers/listings_controller.rb:43:7: C: Align the elements of a hash literal if they span more than one line.
+      :email => current_user.email 
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:43:7: C: Use the new Ruby 1.9 hash syntax.
+      :email => current_user.email 
+      ^^^^^^^^^
+app/controllers/listings_controller.rb:43:35: C: Trailing whitespace detected.
+      :email => current_user.email 
+                                  ^
+app/controllers/listings_controller.rb:44:8: C: Trailing whitespace detected.
+      ) 
+       ^
+app/controllers/listings_controller.rb:46:44: C: Trailing whitespace detected.
+      current_user.recipient = recipient.id 
+                                           ^
+app/controllers/listings_controller.rb:50:1: C: Extra blank line detected.
+app/controllers/listings_controller.rb:53:53: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+        format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:67:53: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+        format.html { redirect_to @listing, notice: 'Listing was successfully updated.' }
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:81:55: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      format.html { redirect_to listings_url, notice: 'Listing was successfully destroyed.' }
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:86:3: C: Keep a blank line before and after private.
+  private
+  ^^^^^^^
+app/controllers/listings_controller.rb:88:5: C: Inconsistent indentation detected.
+    def set_listing ...
+    ^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:93:5: C: Inconsistent indentation detected.
+    def listing_params ...
+    ^^^^^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:98:5: C: Inconsistent indentation detected.
+    def check_user ...
+    ^^^^^^^^^^^^^^
+app/controllers/listings_controller.rb:99:7: C: Use a guard clause instead of wrapping the code inside a conditional expression.
+      if current_user != @listing.user
+      ^^
+
+app/controllers/omniauth_callbacks_controller.rb:2:1: C: Trailing whitespace detected.
+app/controllers/omniauth_callbacks_controller.rb:3:3: C: Assignment Branch Condition size for stripe_connect is too high. [29.14/15]
+  def stripe_connect
+  ^^^
+app/controllers/omniauth_callbacks_controller.rb:4:3: C: Use 2 (not 4) spaces for indentation.
+      @user = current_user
+  ^^^^
+app/controllers/omniauth_callbacks_controller.rb:5:34: C: Redundant curly braces around a hash parameter.
+      if @user.update_attributes({ ...
+                                 ^
+app/controllers/omniauth_callbacks_controller.rb:6:9: C: Align the elements of a hash literal if they span more than one line.
+        provider: request.env["omniauth.auth"].provider,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/omniauth_callbacks_controller.rb:6:9: C: Use 2 spaces for indentation in a hash, relative to the first position after the preceding left parenthesis.
+        provider: request.env["omniauth.auth"].provider,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/omniauth_callbacks_controller.rb:7:9: C: Align the elements of a hash literal if they span more than one line.
+        uid: request.env["omniauth.auth"].uid,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/omniauth_callbacks_controller.rb:8:9: C: Align the elements of a hash literal if they span more than one line.
+        access_code: request.env["omniauth.auth"].credentials.token,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/omniauth_callbacks_controller.rb:10:7: C: Indent the right brace the same as the first position after the preceding left parenthesis.
+      })
+      ^
+app/controllers/omniauth_callbacks_controller.rb:12:37: C: Use the new Ruby 1.9 hash syntax.
+        sign_in_and_redirect @user, :event => :authentication
+                                    ^^^^^^^^^
+app/controllers/omniauth_callbacks_controller.rb:13:46: C: Use the new Ruby 1.9 hash syntax.
+        set_flash_message(:notice, :success, :kind => "Stripe") if is_navigational_format?
+                                             ^^^^^^^^
+app/controllers/omniauth_callbacks_controller.rb:19:1: C: Extra empty line detected at class body end.
+Progress: |============
+app/controllers/orders_controller.rb:2:35: C: Use %i or %I for an array of symbols.
+  before_action :set_order, only: [:show, :edit, :update, :destroy]
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:10:3: C: Use 2 (not 3) spaces for indentation.
+     @orders = Order.all.where(buyer: current_user).order("created_at DESC")
+  ^^^
+app/controllers/orders_controller.rb:21:3: C: Assignment Branch Condition size for create is too high. [39.27/15]
+  def create
+  ^^^
+app/controllers/orders_controller.rb:21:3: C: Method has too many lines. [32/20]
+  def create ...
+  ^^^^^^^^^^
+app/controllers/orders_controller.rb:34:7: W: Useless assignment to variable - charge.
+      charge = Stripe::Charge.create(
+      ^^^^^^
+app/controllers/orders_controller.rb:35:9: C: Align the elements of a hash literal if they span more than one line.
+        :amount => (@listing.price * 100).floor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:35:9: C: Use the new Ruby 1.9 hash syntax.
+        :amount => (@listing.price * 100).floor,
+        ^^^^^^^^^^
+app/controllers/orders_controller.rb:36:9: C: Use the new Ruby 1.9 hash syntax.
+        :currency => "usd",
+        ^^^^^^^^^^^^
+app/controllers/orders_controller.rb:37:9: C: Align the elements of a hash literal if they span more than one line.
+        :card => token
+        ^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:37:9: C: Use the new Ruby 1.9 hash syntax.
+        :card => token
+        ^^^^^^^^
+app/controllers/orders_controller.rb:38:9: C: Indent ) the same as the start of the line where ( is.
+        )
+        ^
+app/controllers/orders_controller.rb:44:5: W: Useless assignment to variable - transfer.
+    transfer = Stripe::Transfer.create( 
+    ^^^^^^^^
+app/controllers/orders_controller.rb:44:40: C: Trailing whitespace detected.
+    transfer = Stripe::Transfer.create( 
+                                       ^
+app/controllers/orders_controller.rb:45:5: C: Align the elements of a hash literal if they span more than one line.
+    :amount => (@listing.price * 95).floor, 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:45:5: C: Indent the first parameter one step more than the start of the previous line.
+    :amount => (@listing.price * 95).floor,  ...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:45:5: C: Use the new Ruby 1.9 hash syntax.
+    :amount => (@listing.price * 95).floor, 
+    ^^^^^^^^^^
+app/controllers/orders_controller.rb:45:44: C: Trailing whitespace detected.
+    :amount => (@listing.price * 95).floor, 
+                                           ^
+app/controllers/orders_controller.rb:46:5: C: Align the elements of a hash literal if they span more than one line.
+    :currency => "usd", 
+    ^^^^^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:46:5: C: Use the new Ruby 1.9 hash syntax.
+    :currency => "usd", 
+    ^^^^^^^^^^^^
+app/controllers/orders_controller.rb:46:24: C: Trailing whitespace detected.
+    :currency => "usd", 
+                       ^
+app/controllers/orders_controller.rb:47:5: C: Use the new Ruby 1.9 hash syntax.
+    :destination => @seller.recipient 
+    ^^^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:47:38: C: Trailing whitespace detected.
+    :destination => @seller.recipient 
+                                     ^
+app/controllers/orders_controller.rb:48:6: C: Trailing whitespace detected.
+    ) 
+     ^
+app/controllers/orders_controller.rb:61:3: C: Keep a blank line before and after private.
+  private
+  ^^^^^^^
+app/controllers/orders_controller.rb:63:5: C: Inconsistent indentation detected.
+    def set_order ...
+    ^^^^^^^^^^^^^
+app/controllers/orders_controller.rb:68:5: C: Inconsistent indentation detected.
+    def order_params ...
+    ^^^^^^^^^^^^^^^^
+
+app/controllers/pages_controller.rb:2:3: C: Put empty method definitions on a single line.
+  def about ...
+  ^^^^^^^^^
+app/controllers/pages_controller.rb:5:3: C: Put empty method definitions on a single line.
+  def contact ...
+  ^^^^^^^^^^^
+
+app/helpers/application_helper.rb:2:1: C: Extra empty line detected at module body beginning.
+
+app/helpers/devise_helper.rb:2:3: C: Assignment Branch Condition size for devise_error_messages! is too high. [19.26/15]
+  def devise_error_messages!
+  ^^^
+app/helpers/devise_helper.rb:3:12: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    return '' if resource.errors.empty?
+           ^^
+app/helpers/devise_helper.rb:5:51: C: Space between { and | detected.
+    messages = resource.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
+                                                  ^
+app/helpers/devise_helper.rb:6:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    sentence = I18n.t('errors.messages.not_saved', count: resource.errors.count, resource: resource.class.model_name.human.downcase)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/helpers/devise_helper.rb:6:101: C: Line is too long. [132/100]
+    sentence = I18n.t('errors.messages.not_saved', count: resource.errors.count, resource: resource.class.model_name.human.downcase)
+                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/helpers/devise_helper.rb:16:10: C: Tagging a string as html safe may be a security risk.
+    html.html_safe
+         ^^^^^^^^^
+app/helpers/devise_helper.rb:18:4: C: Final newline missing.
+end
+   
+
+app/mailers/application_mailer.rb:2:17: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  default from: 'from@example.com'
+                ^^^^^^^^^^^^^^^^^^
+app/mailers/application_mailer.rb:3:10: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  layout 'mailer'
+         ^^^^^^^^
+
+app/models/listing.rb:2:1: C: Tab detected.
+app/models/listing.rb:2:1: C: Trailing whitespace detected.
+app/models/listing.rb:3:1: C: Use 2 (not 1) spaces for indentation.
+	if Rails.env.development?
+^
+app/models/listing.rb:3:1: C: Tab detected.
+	if Rails.env.development?
+^
+app/models/listing.rb:4:1: C: Tab detected.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg"
+^^
+app/models/listing.rb:4:2: C: Use 2 (not 1) spaces for indentation.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg"
+ ^
+app/models/listing.rb:4:38: C: Space inside { detected.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg"
+                                     ^
+app/models/listing.rb:4:72: C: Space inside } detected.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg"
+                                                                       ^
+app/models/listing.rb:4:101: C: Line is too long. [101/100]
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg"
+                                                                                                    ^
+app/models/listing.rb:5:1: C: Tab detected.
+	else	
+^
+app/models/listing.rb:5:6: C: Trailing whitespace detected.
+	else	
+     ^
+app/models/listing.rb:6:1: C: Tab detected.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg",
+^^
+app/models/listing.rb:6:2: C: Use 2 (not 1) spaces for indentation.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg",
+ ^
+app/models/listing.rb:6:38: C: Space inside { detected.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg",
+                                     ^
+app/models/listing.rb:6:72: C: Space inside } detected.
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg",
+                                                                       ^
+app/models/listing.rb:6:101: C: Line is too long. [102/100]
+		has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default_url: "default.jpg",
+                                                                                                    ^^
+app/models/listing.rb:7:1: C: Tab detected.
+											:storage => :dropbox,
+^^^^^^^^^^^
+app/models/listing.rb:7:12: C: Use the new Ruby 1.9 hash syntax.
+											:storage => :dropbox,
+           ^^^^^^^^^^^
+app/models/listing.rb:8:1: C: Tab detected.
+	  									:dropbox_credentials => Rails.root.join("config/dropbox.yml"),
+^^^^^^^^^^^^
+app/models/listing.rb:8:13: C: Use the new Ruby 1.9 hash syntax.
+	  									:dropbox_credentials => Rails.root.join("config/dropbox.yml"),
+            ^^^^^^^^^^^^^^^^^^^^^^^
+app/models/listing.rb:8:37: C: Please use Rails.root.join('path', 'to') instead.
+	  									:dropbox_credentials => Rails.root.join("config/dropbox.yml"),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/listing.rb:9:1: C: Tab detected.
+	  									:path => ":style/:id_:filename"
+^^^^^^^^^^^^
+app/models/listing.rb:9:13: C: Use the new Ruby 1.9 hash syntax.
+	  									:path => ":style/:id_:filename"
+            ^^^^^^^^
+app/models/listing.rb:10:1: C: Tab detected.
+	end  	
+^
+app/models/listing.rb:10:5: C: Trailing whitespace detected.
+	end  	
+    ^^^
+app/models/listing.rb:11:1: C: Tab detected.
+app/models/listing.rb:11:1: C: Trailing whitespace detected.
+app/models/listing.rb:12:1: C: Tab detected.
+	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/		
+^
+app/models/listing.rb:12:58: C: Use %r around regular expression.
+	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/		
+                                                         ^^^^^^^^^^^^^^^
+app/models/listing.rb:12:73: C: Trailing whitespace detected.
+	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/		
+                                                                        ^^
+app/models/listing.rb:13:1: C: Tab detected.
+	validates_attachment_presence :image						 
+^
+app/models/listing.rb:13:38: C: Trailing whitespace detected.
+	validates_attachment_presence :image						 
+                                     ^^^^^^^
+app/models/listing.rb:14:1: C: Tab detected.
+	validates :name, :description, :price, presence: true
+^
+app/models/listing.rb:15:1: C: Tab detected.
+	validates :price, numericality: { greater_than: 0 }
+^
+app/models/listing.rb:15:35: C: Space inside { detected.
+	validates :price, numericality: { greater_than: 0 }
+                                  ^
+app/models/listing.rb:15:51: C: Space inside } detected.
+	validates :price, numericality: { greater_than: 0 }
+                                                  ^
+app/models/listing.rb:17:1: C: Tab detected.
+	belongs_to :user
+^
+app/models/listing.rb:18:1: C: Tab detected.
+	has_many :orders
+^
+Progress: |==============================
+app/models/order.rb:2:1: C: Use 2 (not 1) spaces for indentation.
+	validates :address, :city, :state, presence: true
+^
+app/models/order.rb:2:1: C: Tab detected.
+	validates :address, :city, :state, presence: true
+^
+app/models/order.rb:4:3: C: Inconsistent indentation detected.
+  belongs_to :listing
+  ^^^^^^^^^^^^^^^^^^^
+app/models/order.rb:5:3: C: Inconsistent indentation detected.
+  belongs_to :buyer, class_name: "User"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/order.rb:6:3: C: Inconsistent indentation detected.
+  belongs_to :seller, class_name: "User"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+app/models/user.rb:6:1: C: Trailing whitespace detected.
+
+app/views/listings/index.json.jbuilder:1:33: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+json.array! @listings, partial: 'listings/listing', as: :listing
+                                ^^^^^^^^^^^^^^^^^^
+
+bin/bundle:2:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
+    ^^^^^^^^^^^^^^^^
+bin/bundle:2:44: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
+                                           ^^^^^^^^^^^^^^^
+bin/bundle:3:19: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+load Gem.bin_path('bundler', 'bundle')
+                  ^^^^^^^^^
+bin/bundle:3:30: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+load Gem.bin_path('bundler', 'bundle')
+                             ^^^^^^^^
+
+bin/rails:3:25: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  load File.expand_path('../spring', __FILE__)
+                        ^^^^^^^^^^^
+bin/rails:5:35: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  raise unless e.message.include?('spring')
+                                  ^^^^^^^^
+bin/rails:7:29: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+APP_PATH = File.expand_path('../config/application', __dir__)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+bin/rails:8:18: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require_relative '../config/boot'
+                 ^^^^^^^^^^^^^^^^
+bin/rails:9:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'rails/commands'
+        ^^^^^^^^^^^^^^^^
+
+bin/rake:3:25: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  load File.expand_path('../spring', __FILE__)
+                        ^^^^^^^^^^^
+bin/rake:5:35: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  raise unless e.message.include?('spring')
+                                  ^^^^^^^^
+bin/rake:7:18: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require_relative '../config/boot'
+                 ^^^^^^^^^^^^^^^^
+bin/rake:8:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'rake'
+        ^^^^^^
+
+bin/setup:2:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'pathname'
+        ^^^^^^^^^^
+bin/setup:3:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'fileutils'
+        ^^^^^^^^^^^
+bin/setup:7:42: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+                                         ^^^^^^^^
+bin/setup:17:8: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  puts '== Installing dependencies =='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bin/setup:18:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'gem install bundler --conservative'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bin/setup:19:10: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system('bundle check') || system!('bundle install')
+         ^^^^^^^^^^^^^^
+bin/setup:19:37: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system('bundle check') || system!('bundle install')
+                                    ^^^^^^^^^^^^^^^^
+bin/setup:24:1: C: Extra blank line detected.
+bin/setup:31:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'bin/rails db:setup'
+          ^^^^^^^^^^^^^^^^^^^^
+bin/setup:34:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'bin/rails log:clear tmp:clear'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bin/setup:37:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'bin/rails restart'
+          ^^^^^^^^^^^^^^^^^^^
+
+bin/spring:7:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  require 'rubygems'
+          ^^^^^^^^^^
+bin/spring:8:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  require 'bundler'
+          ^^^^^^^^^
+bin/spring:11:27: C: Prefer find over detect.
+  spring = lockfile.specs.detect { |spec| spec.name == "spring" }
+                          ^^^^^^
+bin/spring:11:35: C: Space between { and | detected.
+  spring = lockfile.specs.detect { |spec| spec.name == "spring" }
+                                  ^
+bin/spring:14:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    gem 'spring', spring.version
+        ^^^^^^^^
+bin/spring:15:13: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    require 'spring/binstub'
+            ^^^^^^^^^^^^^^^^
+
+bin/update:2:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'pathname'
+        ^^^^^^^^^^
+bin/update:3:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'fileutils'
+        ^^^^^^^^^^^
+bin/update:7:42: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+                                         ^^^^^^^^
+bin/update:17:8: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  puts '== Installing dependencies =='
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bin/update:18:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'gem install bundler --conservative'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bin/update:19:10: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system('bundle check') || system!('bundle install')
+         ^^^^^^^^^^^^^^
+bin/update:19:37: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system('bundle check') || system!('bundle install')
+                                    ^^^^^^^^^^^^^^^^
+bin/update:22:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'bin/rails db:migrate'
+          ^^^^^^^^^^^^^^^^^^^^^^
+bin/update:25:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'bin/rails log:clear tmp:clear'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bin/update:28:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  system! 'bin/rails restart'
+          ^^^^^^^^^^^^^^^^^^^
+
+bin/yarn:2:32: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+VENDOR_PATH = File.expand_path('..', __dir__)
+                               ^^^^
+bin/yarn:5:31: C: Prefer single-quoted strings inside interpolations.
+    exec "yarnpkg #{ARGV.join(" ")}"
+                              ^^^
+
+config/application.rb:1:18: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require_relative 'boot'
+                 ^^^^^^
+config/application.rb:3:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'rails/all'
+        ^^^^^^^^^^^
+
+config/boot.rb:1:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
+    ^^^^^^^^^^^^^^^^
+config/boot.rb:1:44: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
+                                           ^^^^^^^^^^^^
+config/boot.rb:3:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'bundler/setup' # Set up gems listed in the Gemfile.
+        ^^^^^^^^^^^^^^^
+Progress: |======================================================
+config/environment.rb:2:18: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require_relative 'application'
+                 ^^^^^^^^^^^^^
+
+config/environments/development.rb:16:6: C: Please use Rails.root.join('path', 'to') instead.
+  if Rails.root.join('tmp/caching-dev.txt').exist?
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/environments/development.rb:16:22: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  if Rails.root.join('tmp/caching-dev.txt').exist?
+                     ^^^^^^^^^^^^^^^^^^^^^
+config/environments/development.rb:21:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      'Cache-Control' => "public, max-age=#{2.days.seconds.to_i}"
+      ^^^^^^^^^^^^^^^
+config/environments/development.rb:56:47: C: Space inside { detected.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+                                              ^
+config/environments/development.rb:56:54: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+                                                     ^^^^^^^^^^^
+config/environments/development.rb:56:77: C: Space inside } detected.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+                                                                            ^
+
+config/environments/production.rb:24:43: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/environments/production.rb:33:101: C: Line is too long. [102/100]
+  # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
+                                                                                                    ^^
+config/environments/production.rb:55:22: C: Space inside square brackets detected.
+  config.log_tags = [ :request_id ]
+                     ^
+config/environments/production.rb:55:34: C: Space inside square brackets detected.
+  config.log_tags = [ :request_id ]
+                                 ^
+config/environments/production.rb:93:47: C: Space inside { detected.
+  config.action_mailer.default_url_options = { host: 'heroku.com' }
+                                              ^
+config/environments/production.rb:93:54: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  config.action_mailer.default_url_options = { host: 'heroku.com' }
+                                                     ^^^^^^^^^^^^
+config/environments/production.rb:93:66: C: Space inside } detected.
+  config.action_mailer.default_url_options = { host: 'heroku.com' }
+                                                                 ^
+
+config/environments/test.rb:18:5: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    'Cache-Control' => "public, max-age=#{1.hour.seconds.to_i}"
+    ^^^^^^^^^^^^^^^
+
+config/initializers/assets.rb:4:43: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+Rails.application.config.assets.version = '1.0'
+                                          ^^^^^
+config/initializers/assets.rb:9:58: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+Rails.application.config.assets.paths << Rails.root.join('node_modules')
+                                                         ^^^^^^^^^^^^^^
+
+config/initializers/backtrace_silencers.rb:3:101: C: Line is too long. [107/100]
+# You can add backtrace silencers for libraries that you're using but don't wish to see in your backtraces.
+                                                                                                    ^^^^^^^
+config/initializers/backtrace_silencers.rb:6:101: C: Line is too long. [112/100]
+# You can also remove all the silencers if you're trying to debug a problem that might stem from framework code.
+                                                                                                    ^^^^^^^^^^^^
+
+config/initializers/devise.rb:9:101: C: Line is too long. [154/100]
+  # config.secret_key = '6362f57aa9015b320cdac1ce3a7083b15fd4d5a53df9a734bb206a921c6beed94ce6f8119209106f533c0bf329c993c5e03d04a5600033f9fb0d83ff551e23ae'
+                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:15:26: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:27:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  require 'devise/orm/active_record'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:111:101: C: Line is too long. [150/100]
+  # config.pepper = '1a7513f042a0c7572864fd91f5e3bd09bedb4fef9e7fd3b70dac043e8a228d198e4edce5fb3ed9864b88cb3c09b749da49ad982adffdf3f6cc68faf41ad5da8c'
+                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:279:7: C: Align the parameters of a method call if they span more than one line.
+      ENV['STRIPE_CONNECT_CLIENT_ID'],
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:279:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      ENV['STRIPE_CONNECT_CLIENT_ID'],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:280:7: C: Align the parameters of a method call if they span more than one line.
+      ENV['STRIPE_API_KEY'],
+      ^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:280:11: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      ENV['STRIPE_API_KEY'],
+          ^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:281:7: C: Align the elements of a hash literal if they span more than one line.
+      :scope => 'read_write',
+      ^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:281:7: C: Align the parameters of a method call if they span more than one line.
+      :scope => 'read_write', ...
+      ^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:281:7: C: Use the new Ruby 1.9 hash syntax.
+      :scope => 'read_write',
+      ^^^^^^^^^
+config/initializers/devise.rb:281:17: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      :scope => 'read_write',
+                ^^^^^^^^^^^^
+config/initializers/devise.rb:282:7: C: Use the new Ruby 1.9 hash syntax.
+      :stripe_landing => 'register'
+      ^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:282:26: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+      :stripe_landing => 'register'
+                         ^^^^^^^^^^
+
+config/routes.rb:2:1: C: Trailing whitespace detected.
+config/routes.rb:3:1: C: Use 2 (not 1) spaces for indentation.
+	root 'listings#index'
+^
+config/routes.rb:3:1: C: Tab detected.
+	root 'listings#index'
+^
+config/routes.rb:3:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+	root 'listings#index'
+      ^^^^^^^^^^^^^^^^
+config/routes.rb:4:1: C: Tab detected.
+config/routes.rb:4:1: C: Trailing whitespace detected.
+config/routes.rb:5:32: C: Trailing whitespace detected.
+  # Correct way to route to the 
+                               ^
+config/routes.rb:6:3: C: Inconsistent indentation detected.
+  devise_for :users do ...
+  ^^^^^^^^^^^^^^^^^^^^
+config/routes.rb:7:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    get 'omniauth_callbacks'
+        ^^^^^^^^^^^^^^^^^^^^
+config/routes.rb:10:3: C: Inconsistent indentation detected.
+  resources :listings do ...
+  ^^^^^^^^^^^^^^^^^^^^^^
+config/routes.rb:11:3: C: Use 2 (not 1) spaces for indentation.
+  	resources :orders, only: [:new, :create]
+  ^
+config/routes.rb:11:3: C: Tab detected.
+  	resources :orders, only: [:new, :create]
+  ^
+config/routes.rb:11:29: C: Use %i or %I for an array of symbols.
+  	resources :orders, only: [:new, :create]
+                            ^^^^^^^^^^^^^^^
+config/routes.rb:14:3: C: Inconsistent indentation detected.
+  get 'pages/about'
+  ^^^^^^^^^^^^^^^^^
+config/routes.rb:14:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  get 'pages/about'
+      ^^^^^^^^^^^^^
+config/routes.rb:15:3: C: Inconsistent indentation detected.
+  get 'pages/contact'
+  ^^^^^^^^^^^^^^^^^^^
+config/routes.rb:15:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  get 'pages/contact'
+      ^^^^^^^^^^^^^^^
+config/routes.rb:16:3: C: Inconsistent indentation detected.
+  get 'seller' => "listings#seller"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/routes.rb:16:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  get 'seller' => "listings#seller"
+      ^^^^^^^^
+config/routes.rb:17:3: C: Inconsistent indentation detected.
+  get 'sales' => "orders#sales"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/routes.rb:17:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  get 'sales' => "orders#sales"
+      ^^^^^^^
+config/routes.rb:18:3: C: Inconsistent indentation detected.
+  get 'purchases' => "orders#purchases"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/routes.rb:18:7: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  get 'purchases' => "orders#purchases"
+      ^^^^^^^^^^^
+config/routes.rb:20:1: C: Trailing whitespace detected.
+Progress: |================================================================================
+config/spring.rb:1:1: C: %w-literals should be delimited by [ and ].
+%w( ...
+^^^
+config/spring.rb:6:9: C: Space between { and | detected.
+).each { |path| Spring.watch(path) }
+        ^
+
+db/migrate/20170621155957_devise_create_users.rb:29:101: C: Line is too long. [104/100]
+      # t.integer  :failed_attempts, default: 0, null: false # Only if lock strategy is :failed_attempts
+                                                                                                    ^^^^
+db/migrate/20170621155957_devise_create_users.rb:33:1: C: Extra blank line detected.
+
+db/schema.rb:13:1: C: Block has too many lines. [40/25]
+ActiveRecord::Schema.define(version: 20170627232407) do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+db/schema.rb:13:38: C: Use underscores(_) as decimal mark and separate every 3 digits with them.
+ActiveRecord::Schema.define(version: 20170627232407) do
+                                     ^^^^^^^^^^^^^^
+db/schema.rb:14:1: C: Extra empty line detected at block body beginning.
+db/schema.rb:57:1: C: Extra empty line detected at block body end.
+
+db/seeds.rb:1:101: C: Line is too long. [103/100]
+# This file should contain all the record creation needed to seed the database with its default values.
+                                                                                                    ^^^
+db/seeds.rb:2:101: C: Line is too long. [111/100]
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+                                                                                                    ^^^^^^^^^^^
+
+test/controllers/listings_controller_test.rb:1:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'test_helper'
+        ^^^^^^^^^^^^^
+test/controllers/listings_controller_test.rb:19:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    assert_difference('Listing.count') do
+                      ^^^^^^^^^^^^^^^
+test/controllers/listings_controller_test.rb:20:35: C: Space inside { detected.
+      post listings_url, params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                  ^
+test/controllers/listings_controller_test.rb:20:46: C: Space inside { detected.
+      post listings_url, params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                             ^
+test/controllers/listings_controller_test.rb:20:101: C: Line is too long. [127/100]
+      post listings_url, params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/controllers/listings_controller_test.rb:20:124: C: Space inside } detected.
+      post listings_url, params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                                                                                           ^
+test/controllers/listings_controller_test.rb:20:126: C: Space inside } detected.
+      post listings_url, params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                                                                                             ^
+test/controllers/listings_controller_test.rb:37:43: C: Space inside { detected.
+    patch listing_url(@listing), params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                          ^
+test/controllers/listings_controller_test.rb:37:54: C: Space inside { detected.
+    patch listing_url(@listing), params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                     ^
+test/controllers/listings_controller_test.rb:37:101: C: Line is too long. [135/100]
+    patch listing_url(@listing), params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/controllers/listings_controller_test.rb:37:132: C: Space inside } detected.
+    patch listing_url(@listing), params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                                                                                                   ^
+test/controllers/listings_controller_test.rb:37:134: C: Space inside } detected.
+    patch listing_url(@listing), params: { listing: { description: @listing.description, name: @listing.name, price: @listing.price } }
+                                                                                                                                     ^
+test/controllers/listings_controller_test.rb:42:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    assert_difference('Listing.count', -1) do
+                      ^^^^^^^^^^^^^^^
+Progress: |======================================================================================================
+test/controllers/orders_controller_test.rb:1:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'test_helper'
+        ^^^^^^^^^^^^^
+test/controllers/orders_controller_test.rb:19:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    assert_difference('Order.count') do
+                      ^^^^^^^^^^^^^
+test/controllers/orders_controller_test.rb:20:33: C: Space inside { detected.
+      post orders_url, params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                ^
+test/controllers/orders_controller_test.rb:20:42: C: Space inside { detected.
+      post orders_url, params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                         ^
+test/controllers/orders_controller_test.rb:20:101: C: Line is too long. [109/100]
+      post orders_url, params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                                                                                    ^^^^^^^^^
+test/controllers/orders_controller_test.rb:20:106: C: Space inside } detected.
+      post orders_url, params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                                                                                         ^
+test/controllers/orders_controller_test.rb:20:108: C: Space inside } detected.
+      post orders_url, params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                                                                                           ^
+test/controllers/orders_controller_test.rb:37:39: C: Space inside { detected.
+    patch order_url(@order), params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                      ^
+test/controllers/orders_controller_test.rb:37:48: C: Space inside { detected.
+    patch order_url(@order), params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                               ^
+test/controllers/orders_controller_test.rb:37:101: C: Line is too long. [115/100]
+    patch order_url(@order), params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                                                                                    ^^^^^^^^^^^^^^^
+test/controllers/orders_controller_test.rb:37:112: C: Space inside } detected.
+    patch order_url(@order), params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                                                                                               ^
+test/controllers/orders_controller_test.rb:37:114: C: Space inside } detected.
+    patch order_url(@order), params: { order: { address: @order.address, city: @order.city, state: @order.state } }
+                                                                                                                 ^
+test/controllers/orders_controller_test.rb:42:23: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+    assert_difference('Order.count', -1) do
+                      ^^^^^^^^^^^^^
+
+test/controllers/pages_controller_test.rb:1:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'test_helper'
+        ^^^^^^^^^^^^^
+test/controllers/pages_controller_test.rb:13:1: C: Extra empty line detected at class body end.
+
+test/models/listing_test.rb:1:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'test_helper'
+        ^^^^^^^^^^^^^
+
+test/models/order_test.rb:1:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'test_helper'
+        ^^^^^^^^^^^^^
+
+test/models/user_test.rb:1:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'test_helper'
+        ^^^^^^^^^^^^^
+
+test/test_helper.rb:1:26: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require File.expand_path('../../config/environment', __FILE__)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/test_helper.rb:2:9: C: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+require 'rails/test_help'
+        ^^^^^^^^^^^^^^^^^
+test/test_helper.rb:4:7: C: Use nested module/class definitions instead of compact style.
+class ActiveSupport::TestCase
+      ^^^^^^^^^^^^^^^^^^^^^^^
+Progress: |=====================================================================================================================|
+
+71 files inspected, 332 offenses detected
