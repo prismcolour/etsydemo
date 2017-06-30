@@ -1,0 +1,43 @@
+
+128  Style/StringLiterals
+26   Layout/SpaceInsideHashLiteralBraces
+23   Layout/TrailingWhitespace
+20   Layout/Tab
+17   Style/HashSyntax
+15   Layout/IndentationConsistency
+15   Metrics/LineLength
+10   Bundler/OrderedGems
+10   Layout/AlignHash
+8    Layout/IndentationWidth
+6    Layout/EmptyLines
+6    Style/SymbolArray
+4    Metrics/AbcSize
+4    Style/EmptyMethod
+3    Layout/AlignParameters
+3    Layout/SpaceInsideBlockBraces
+3    Lint/UselessAssignment
+2    Layout/EmptyLinesAroundAccessModifier
+2    Layout/EmptyLinesAroundBlockBody
+2    Layout/EmptyLinesAroundClassBody
+2    Layout/FirstParameterIndentation
+2    Layout/IndentHash
+2    Layout/SpaceInsideBrackets
+2    Layout/TrailingBlankLines
+2    Metrics/MethodLength
+2    Rails/FilePath
+1    Layout/ClosingParenthesisIndentation
+1    Layout/EmptyLinesAroundModuleBody
+1    Layout/ExtraSpacing
+1    Metrics/BlockLength
+1    Rails/OutputSafety
+1    Style/BracesAroundHashParameters
+1    Style/ClassAndModuleChildren
+1    Style/CollectionMethods
+1    Style/GuardClause
+1    Style/NumericLiterals
+1    Style/PercentLiteralDelimiters
+1    Style/RegexpLiteral
+1    Style/StringLiteralsInInterpolation
+--
+332  Total
+
