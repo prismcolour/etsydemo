@@ -6,6 +6,7 @@ AllCops:
     - 'node_modules/**/*'
     - 'config/spring.rb'
     - '**/Gemfile'
+    - 'config/initializers/devise.rb'
 
 Rails:
   Enabled: true
