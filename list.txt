@@ -15,9 +15,6 @@ app/helpers/orders_helper.rb:7:9: W: Useless assignment to variable - charge.
 app/helpers/orders_helper.rb:17:5: W: Useless assignment to variable - transfer.
     transfer = Stripe::Transfer.create(
     ^^^^^^^^
-Progress: |==========================================================
-config/initializers/devise.rb:9:121: C: Line is too long. [154/120]
-  # config.secret_key = '6362f57aa9015b320cdac1ce3a7083b15fd4d5a53df9a734bb206a921c6beed94ce6f8119209106f533c0bf329c993c5e03d04a5600033f9fb0d83ff551e23ae'
                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 config/initializers/devise.rb:111:121: C: Line is too long. [150/120]
   # config.pepper = '1a7513f042a0c7572864fd91f5e3bd09bedb4fef9e7fd3b70dac043e8a228d198e4edce5fb3ed9864b88cb3c09b749da49ad982adffdf3f6cc68faf41ad5da8c'

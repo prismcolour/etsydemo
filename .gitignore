@@ -27,3 +27,6 @@
 
 # Ignore files uploaded on localhost
 /public/system
+
+# Ignore files uploaded on localhost
+/list.txt
