@@ -1,101 +1,31 @@
 
 
-Progress: |
-app/controllers/listings_controller.rb:32:3: C: Assignment Branch Condition size for create is too high. [28.71/15]
-  def create
-  ^^^
-app/controllers/listings_controller.rb:32:3: C: Method has too many lines. [22/20]
-  def create ...
-  ^^^^^^^^^^
-app/controllers/listings_controller.rb:38:7: W: Useless assignment to variable - token.
-      token = params[:stripeToken]
-      ^^^^^
-app/controllers/listings_controller.rb:99:5: C: Use a guard clause instead of wrapping the code inside a conditional expression.
-    if current_user != @listing.user
-    ^^
-Progress: |=========
-app/controllers/omniauth_callbacks_controller.rb:2:3: C: Assignment Branch Condition size for stripe_connect is too high. [29.14/15]
-  def stripe_connect
-  ^^^
-app/controllers/omniauth_callbacks_controller.rb:7:101: C: Line is too long. [107/100]
-                                 publishable_key: request.env['omniauth.auth'].info.stripe_publishable_key)
-                                                                                                    ^^^^^^^
-Progress: |===========
-app/controllers/orders_controller.rb:21:3: C: Assignment Branch Condition size for create is too high. [39.27/15]
-  def create
-  ^^^
-app/controllers/orders_controller.rb:21:3: C: Method has too many lines. [32/20]
-  def create ...
-  ^^^^^^^^^^
-app/controllers/orders_controller.rb:34:7: W: Useless assignment to variable - charge.
-      charge = Stripe::Charge.create(
-      ^^^^^^
-app/controllers/orders_controller.rb:44:5: W: Useless assignment to variable - transfer.
-    transfer = Stripe::Transfer.create(
-    ^^^^^^^^
-Progress: |=============
-app/helpers/devise_helper.rb:2:3: C: Assignment Branch Condition size for devise_error_messages! is too high. [19.26/15]
-  def devise_error_messages!
-  ^^^
-app/helpers/devise_helper.rb:6:101: C: Line is too long. [132/100]
-    sentence = I18n.t('errors.messages.not_saved', count: resource.errors.count, resource: resource.class.model_name.human.downcase)
-                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app/helpers/devise_helper.rb:16:10: C: Tagging a string as html safe may be a security risk.
+Progress: |================
+app/helpers/devise_helper.rb:18:10: C: Tagging a string as html safe may be a security risk.
     html.html_safe
          ^^^^^^^^^
 Progress: |==================
-app/models/listing.rb:3:101: C: Line is too long. [101/100]
-    has_attached_file :image, styles: {medium: '200x', thumb: '100x100>'}, default_url: 'default.jpg'
-                                                                                                    ^
-app/models/listing.rb:5:101: C: Line is too long. [102/100]
-    has_attached_file :image, styles: {medium: '200x', thumb: '100x100>'}, default_url: 'default.jpg',
-                                                                                                    ^^
-app/models/listing.rb:7:44: C: Please use Rails.root.join('path', 'to') instead.
-                      dropbox_credentials: Rails.root.join('config/dropbox.yml'),
-                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app/models/listing.rb:11:59: C: Use %r around regular expression.
-  validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
-                                                          ^^^^^^^^^^^^^^^
-Progress: |=======================================
-config/environments/development.rb:16:6: C: Please use Rails.root.join('path', 'to') instead.
-  if Rails.root.join('tmp/caching-dev.txt').exist?
-     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Progress: |==============================================
-config/environments/production.rb:33:101: C: Line is too long. [102/100]
-  # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
-                                                                                                    ^^
-Progress: |================================================
-config/initializers/backtrace_silencers.rb:3:101: C: Line is too long. [107/100]
-# You can add backtrace silencers for libraries that you're using but don't wish to see in your backtraces.
-                                                                                                    ^^^^^^^
-config/initializers/backtrace_silencers.rb:6:101: C: Line is too long. [112/100]
-# You can also remove all the silencers if you're trying to debug a problem that might stem from framework code.
-                                                                                                    ^^^^^^^^^^^^
-
-config/initializers/devise.rb:9:101: C: Line is too long. [154/100]
+app/helpers/listings_helper.rb:5:9: W: Useless assignment to variable - token.
+        token = params[:stripeToken]
+        ^^^^^
+Progress: |=====================
+app/helpers/orders_helper.rb:7:9: W: Useless assignment to variable - charge.
+        charge = Stripe::Charge.create(
+        ^^^^^^
+app/helpers/orders_helper.rb:17:5: W: Useless assignment to variable - transfer.
+    transfer = Stripe::Transfer.create(
+    ^^^^^^^^
+Progress: |==========================================================
+config/initializers/devise.rb:9:121: C: Line is too long. [154/120]
   # config.secret_key = '6362f57aa9015b320cdac1ce3a7083b15fd4d5a53df9a734bb206a921c6beed94ce6f8119209106f533c0bf329c993c5e03d04a5600033f9fb0d83ff551e23ae'
-                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-config/initializers/devise.rb:111:101: C: Line is too long. [150/100]
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/devise.rb:111:121: C: Line is too long. [150/120]
   # config.pepper = '1a7513f042a0c7572864fd91f5e3bd09bedb4fef9e7fd3b70dac043e8a228d198e4edce5fb3ed9864b88cb3c09b749da49ad982adffdf3f6cc68faf41ad5da8c'
-                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Progress: |=======================================================================
-test/controllers/listings_controller_test.rb:20:101: C: Line is too long. [123/100]
-      post listings_url, params: {listing: {description: @listing.description, name: @listing.name, price: @listing.price}}
-                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^
-test/controllers/listings_controller_test.rb:37:101: C: Line is too long. [131/100]
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Progress: |=====================================================================
+test/controllers/listings_controller_test.rb:39:121: C: Line is too long. [131/120]
     patch listing_url(@listing), params: {listing: {description: @listing.description, name: @listing.name, price: @listing.price}}
-                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Progress: |=========================================================================
-test/controllers/orders_controller_test.rb:20:101: C: Line is too long. [105/100]
-      post orders_url, params: {order: {address: @order.address, city: @order.city, state: @order.state}}
-                                                                                                    ^^^^^
-test/controllers/orders_controller_test.rb:37:101: C: Line is too long. [111/100]
-    patch order_url(@order), params: {order: {address: @order.address, city: @order.city, state: @order.state}}
-                                                                                                    ^^^^^^^^^^^
-Progress: |===================================================================================
-test/test_helper.rb:4:7: C: Use nested module/class definitions instead of compact style.
-class ActiveSupport::TestCase
-      ^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                                                        ^^^^^^^^^^^
 Progress: |=======================================================================================|
 
-51 files inspected, 28 offenses detected
+52 files inspected, 7 offenses detected

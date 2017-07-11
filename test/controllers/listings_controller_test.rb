@@ -17,7 +17,9 @@ class ListingsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should create listing' do
     assert_difference('Listing.count') do
-      post listings_url, params: {listing: {description: @listing.description, name: @listing.name, price: @listing.price}}
+      post listings_url, params: {listing: {description: @listing.description,
+                                            name:        @listing.name,
+                                            price:       @listing.price}}
     end
 
     assert_redirected_to listing_url(Listing.last)

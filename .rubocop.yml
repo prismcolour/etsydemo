@@ -12,7 +12,7 @@ Rails:
 
   # Commonly used screens these days easily fit more than 80 characters.
 Metrics/LineLength:
-  Max: 100
+  Max: 120
 
 # Too short methods lead to extraction of single-use methods, which can make
 # the code easier to read (by naming things), but can also clutter the class
@@ -154,4 +154,17 @@ Layout/IndentationWidth:
 # Keep it consistent with Rails CRUD interface.
 Style/EmptyMethod:
   Enabled: false
+
+# ABC defaults to 15.  8 assignments / 8 branches / 8 conditionals. 
+Metrics/AbcSize:
+  Enabled: false
+
+# Shut off GuardClause.  Maintain consistency in conditional statements.
+Style/GuardClause:
+  Enabled: false
+
+# Shut off compact module/class definitions.  Affecting default Rails code.
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 
