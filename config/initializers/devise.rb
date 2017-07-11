@@ -276,8 +276,8 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
   config.omniauth :stripe_connect,
-      ENV['STRIPE_CONNECT_CLIENT_ID'],
-      ENV['STRIPE_API_KEY'],
-      :scope => 'read_write',
-      :stripe_landing => 'register'
+                  ENV['STRIPE_CONNECT_CLIENT_ID'],
+                  ENV['STRIPE_API_KEY'],
+                  scope:          'read_write',
+                  stripe_landing: 'register'
 end

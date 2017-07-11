@@ -1,23 +1,20 @@
 Rails.application.routes.draw do
-  
-	root 'listings#index'
-	
-  # Correct way to route to the 
+  root 'listings#index'
+
+  # Correct way to route to the
   devise_for :users do
     get 'omniauth_callbacks'
   end
 
   resources :listings do
-  	resources :orders, only: [:new, :create]
+    resources :orders, only: [:new, :create]
   end
 
   get 'pages/about'
   get 'pages/contact'
-  get 'seller' => "listings#seller"
-  get 'sales' => "orders#sales"
-  get 'purchases' => "orders#purchases"
-
-  
+  get 'seller' => 'listings#seller'
+  get 'sales' => 'orders#sales'
+  get 'purchases' => 'orders#purchases'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

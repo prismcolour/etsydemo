@@ -3,11 +3,11 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!
 
   def sales
-    @orders = Order.all.where(seller: current_user).order("created_at DESC")
+    @orders = Order.all.where(seller: current_user).order('created_at DESC')
   end
 
   def purchases
-     @orders = Order.all.where(buyer: current_user).order("created_at DESC")
+     @orders = Order.all.where(buyer: current_user).order('created_at DESC')
   end
 
   # GET /orders/new
@@ -27,25 +27,25 @@ class OrdersController < ApplicationController
     @order.buyer_id = current_user.id
     @order.seller_id = @seller.id
 
-    Stripe.api_key = ENV["STRIPE_API_KEY"]
+    Stripe.api_key = ENV['STRIPE_API_KEY']
     token = params[:stripeToken]
 
     begin
       charge = Stripe::Charge.create(
-        :amount => (@listing.price * 100).floor,
-        :currency => "usd",
-        :card => token
-        )
-      flash[:notice] = "Thanks for ordering!"
+        amount:   (@listing.price * 100).floor,
+        currency: 'usd',
+        card:     token
+      )
+      flash[:notice] = 'Thanks for ordering!'
     rescue Stripe::CardError => e
       flash[:danger] = e.message
     end
 
-    transfer = Stripe::Transfer.create( 
-    :amount => (@listing.price * 95).floor, 
-    :currency => "usd", 
-    :destination => @seller.recipient 
-    ) 
+    transfer = Stripe::Transfer.create(
+      amount:      (@listing.price * 95).floor,
+      currency:    'usd',
+      destination: @seller.recipient
+    )
 
     respond_to do |format|
       if @order.save
@@ -59,13 +59,14 @@ class OrdersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_order
-      @order = Order.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def order_params
-      params.require(:order).permit(:address, :city, :state)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_order
+    @order = Order.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def order_params
+    params.require(:order).permit(:address, :city, :state)
+  end
 end

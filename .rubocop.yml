@@ -1,3 +1,12 @@
+AllCops:
+  TargetRubyVersion: 2.4      <<<<---------
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'config/spring.rb'
+    - '**/Gemfile'
+
 Rails:
   Enabled: true
 
@@ -19,16 +28,14 @@ Metrics/ClassLength:
 Layout/SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: no_space
 
-# Single quotes being faster is hardly measurable and only affects parse time.
-# Enforcing double quotes reduces the times where you need to change them
-# when introducing an interpolation. Use single quotes only if their semantics
-# are needed.
+# Use single quotes only if their semantics
+# are needed.  Double quotes only needed for string interpolation.
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 # We do not need to support Ruby 1.9, so this is good to use.
 Style/SymbolArray:
-  Enabled: true
+  Enabled: false
 
 # Most readable form.
 Layout/AlignHash:
@@ -134,3 +141,17 @@ Lint/Debugger:
 # Style preference
 Style/MethodDefParentheses:
   Enabled: false
+
+# Bypass this in config.ru file
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Bypass inconsistent check for identation width.  
+Layout/IndentationWidth:
+  Enabled: false 
+
+# Bypass single line for empty method. 
+# Keep it consistent with Rails CRUD interface.
+Style/EmptyMethod:
+  Enabled: false
+

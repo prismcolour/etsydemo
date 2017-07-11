@@ -1,5 +1,5 @@
 
-128  Style/StringLiterals
+112  Style/StringLiterals
 26   Layout/SpaceInsideHashLiteralBraces
 23   Layout/TrailingWhitespace
 20   Layout/Tab
@@ -39,5 +39,5 @@
 1    Style/RegexpLiteral
 1    Style/StringLiteralsInInterpolation
 --
-332  Total
+316  Total
 

@@ -1,16 +1,16 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:seller,  :new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:seller, :new, :create, :edit, :update, :destroy]
   before_action :check_user, only: [:edit, :update, :destroy]
 
   def seller
-    @listings = Listing.where(user: current_user).order("created_at DESC")
+    @listings = Listing.where(user: current_user).order('created_at DESC')
   end
 
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all.order("created_at DESC")
+    @listings = Listing.all.order('created_at DESC')
   end
 
   # GET /listings/1
@@ -34,19 +34,18 @@ class ListingsController < ApplicationController
     @listing.user_id = current_user.id
 
     if current_user.recipient.blank?
-      Stripe.api_key = ENV["STRIPE_API_KEY"]
+      Stripe.api_key = ENV['STRIPE_API_KEY']
       token = params[:stripeToken]
 
-      recipient = Stripe::Account.create( 
-      :type => 'custom', 
-      :country => 'US', 
-      :email => current_user.email 
-      ) 
+      recipient = Stripe::Account.create(
+        type:    'custom',
+        country: 'US',
+        email:   current_user.email
+      )
 
-      current_user.recipient = recipient.id 
+      current_user.recipient = recipient.id
       current_user.save
     end
-
 
     respond_to do |format|
       if @listing.save
@@ -84,20 +83,21 @@ class ListingsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_listing
-      @listing = Listing.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def listing_params
-      params.require(:listing).permit(:name, :description, :price, :image)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_listing
+    @listing = Listing.find(params[:id])
+  end
 
-    # Make sure listing belongs to user
-    def check_user
-      if current_user != @listing.user
-        redirect_to root_url, alert: "Sorry, listing belongs to someone else."
-      end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def listing_params
+    params.require(:listing).permit(:name, :description, :price, :image)
+  end
+
+  # Make sure listing belongs to user
+  def check_user
+    if current_user != @listing.user
+      redirect_to root_url, alert: 'Sorry, listing belongs to someone else.'
     end
+  end
 end
